@@ -1,7 +1,15 @@
 -- Pull wezterm API
 local wezterm = require("wezterm")
 
+-- Start in Fullscreen
+wezterm.on("gui-startup", function(cmd)
+	local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
+	window:gui_window():toggle_fullscreen()
+end)
+
 return {
+	adjust_window_size_when_changing_font_size = false,
+	audible_bell = "Disabled",
 	default_domain = "WSL:Ubuntu",
 	color_scheme = "Tokyo Night Moon",
 	font_size = 14.0,
@@ -18,4 +26,5 @@ return {
 		top = 0,
 		bottom = 0,
 	},
+	enable_tab_bar = false,
 }
