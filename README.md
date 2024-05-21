@@ -1,1 +1,2 @@
-### my current wezterm config file
+### My current wezterm file
+more changes to come 
