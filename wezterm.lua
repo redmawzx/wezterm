@@ -7,6 +7,11 @@ wezterm.on("gui-startup", function(cmd)
 	window:gui_window():toggle_fullscreen()
 end)
 
+local dimmer = { brightness = 0.1 }
+
+-- This will hold the configuration
+local config = wezterm.config_builder()
+
 return {
 	adjust_window_size_when_changing_font_size = false,
 	audible_bell = "Disabled",
@@ -26,5 +31,11 @@ return {
 		top = 0,
 		bottom = 0,
 	},
+	-- Enable wayland support
+	enable_wayland = true,
+	use_ime = false,
+	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
+	-- Remove tab bar
 	enable_tab_bar = false,
+	background = {},
 }
