@@ -24,6 +24,7 @@ return {
 		"JetBrainsMono Nerd Font",
 		"ComicCodeLigatures Nerd Font",
 	}),
+	force_reverse_video_cursor = true,
 	-- Remove terminal padding
 	window_padding = {
 		left = 0,
@@ -36,6 +37,9 @@ return {
 	use_ime = false,
 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
 	-- Remove tab bar
-	enable_tab_bar = false,
+	enable_tab_bar = true,
+	-- Hide tab bar
+	hide_tab_bar_if_only_one_tab = true,
+	exit_behaviour = "Close",
 	background = {},
 }
