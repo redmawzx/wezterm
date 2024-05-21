@@ -40,6 +40,19 @@ return {
 	enable_tab_bar = true,
 	-- Hide tab bar
 	hide_tab_bar_if_only_one_tab = true,
-	exit_behaviour = "Close",
-	background = {},
+	exit_behavior = "Close",
+	background = {
+		{
+			source = {
+				File = "",
+			},
+			height = "Contain",
+			width = "Contain",
+			horizontal_align = "Center",
+			vertical_align = "Middle",
+			repeat_x = "NoRepeat",
+			repeat_y = "NoRepeat",
+			opacity = 0.1,
+		},
+	},
 }
