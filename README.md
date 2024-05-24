@@ -1,2 +1,4 @@
-### My current wezterm file
-more changes to come 
+### My wezterm config
+
+TODO
+download on mac/settings
